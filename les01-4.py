@@ -1,14 +1,9 @@
-number = list(input('Введите число: '))
-int_number = [int(x) for x in number]
-max_num = 1
-i = len(int_number)
+number = input('Введите число: ')
+max_num = 0
 
-print(i)
-while i > 0:
-    i -= 1
-
-    while max_num < int_number[i]:
-        max_num = int_number[i]
-
+for j in number:
+        i=int(j)
+        while max_num < i:
+                max_num = i
+                
 print(max_num)
-
