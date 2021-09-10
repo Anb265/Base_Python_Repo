@@ -16,3 +16,19 @@ for i in numbers_list:
 sum(numbers_list)
 
 
+
+def sum(x):
+
+
+    while true:
+        numbers = int(input('Введите числа через пробел: '))
+        numders += numders
+        numbers_list = list(map(int, numbers.split()))
+        num_sum = sum(numbers_list)
+
+
+    print(num_sum)
+
+sum()
+
+
