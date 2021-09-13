@@ -1,34 +1,18 @@
-numbers = int(input('Введите числа через пробел: ')) # строка
-numbers_list = list(map(int, numbers.split( ))) # список из чисел
-#num_sum = sum(numbers_list)
-#
-# for number in numbers:
-#     if number.isdigit:
-#         return int(number)
+total_number = 0
 
-def sum(x):
-    num_sum = sum(x)
-    print(num_sum)
+def list_sum(numbers_list):
+    global total_number
+    for num in numbers_list:
+        try:
+            total_number += int(num)
+        except ValueError:
+            print("Сумма введенных чисел:", total_number)
+            print('Введен не числовой символ. Выход из программы')
+            return 'Exit'
+    print("Сумма введенных чисел:", total_number)
 
-for i in numbers_list:
-    sum(i)
-
-sum(numbers_list)
-
-
-
-def sum(x):
-
-
-    while true:
-        numbers = int(input('Введите числа через пробел: '))
-        numders += numders
-        numbers_list = list(map(int, numbers.split()))
-        num_sum = sum(numbers_list)
-
-
-    print(num_sum)
-
-sum()
-
-
+while True:
+    numbers = (input('Введите числа через пробел: '))  # строка
+    numbers_list = numbers.split()
+    if list_sum(numbers_list) == 'Exit':
+        break
